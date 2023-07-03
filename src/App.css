@@ -367,6 +367,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
+
+
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
 }
@@ -423,6 +425,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx img {
   height: 300px;
   /* object-fit: cover; */
+}
+
+@media(max-width:992px){
+  .proj-imgbx img{
+    object-fit: cover;
+  }
 }
 
 .proj-imgbx::before {
@@ -621,4 +629,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+
+
+@media(max-width:992px){
+  .project .nav.nav-pills{
+    width: 92%;
+  }
+  .project .nav.nav-pills .nav-link{
+    font-size: 10px;
+  }
+
+  .newsletter-bx{
+    display: none;
+  }
+
+  .contact{
+    padding:60px 0 55px 0;
+    margin-bottom: 2rem;
+  }
 }
